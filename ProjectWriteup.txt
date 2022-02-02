@@ -1,0 +1,33 @@
+1. GitHub https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git
+2. UML: https://github.com/barbokupna/Ethereum-Coffee-Supply-Chain.git/UML
+
+3. Libraries used: 
+	web3
+	typescript
+
+	
+4.  Versions used
+
+node          v12.13.0
+npm           6.12.0
+python        2.7.18
+ganache-cli   v6.7.0 (ganache-core: 2.8.0)
+truffle       v4.1.14 
+
+
+5. contract: 
+    - SupplyChain
+    0x40352F412B22C9F555806ab5Ea1E4128A0484dc3
+    https://rinkeby.etherscan.io/address/0x40352f412b22c9f555806ab5ea1e4128a0484dc3#code
+
+    Roles:       Farmer, Consumer, Distributor, Retailer
+	https://rinkeby.etherscan.io/address/0xf39c790e9f99e59b9131355b10aa26fd1f7e8b06  
+        https://rinkeby.etherscan.io/address/0xc8243b13f1613b9624d35fc4d709f5e3a7aa7299
+        https://rinkeby.etherscan.io/address/0xaae051de976a8d4ff1750baa19800c027c7eb039
+        https://rinkeby.etherscan.io/address/0xb1ce28885d01692908589048aedffe1d31eb552a
+
+
+
+Transaction History: https://rinkeby.etherscan.io/address/0x3de5326e4fa15f48761df56e1911aef09a8cab14
+
+  
