@@ -4,10 +4,10 @@ import "../coffeecore/Ownable.sol";
 import "../coffeeaccesscontrol/ConsumerRole.sol";
 import "../coffeeaccesscontrol/RetailerRole.sol";
 import "../coffeeaccesscontrol/DistributorRole.sol";
-
+import "../coffeeaccesscontrol/FarmerRole.sol";
 //import "@openzeppelin/contracts/utils/Strings.sol";
 // Define a contract 'Supplychain'
-contract SupplyChain is Ownable, ConsumerRole, RetailerRole, DistributorRole {
+contract SupplyChain is Ownable, ConsumerRole, RetailerRole, DistributorRole, FarmerRole {
     // Define 'owner'
     //address owner;
 
