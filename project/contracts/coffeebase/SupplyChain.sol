@@ -203,7 +203,7 @@ contract SupplyChain is Ownable, ConsumerRole, RetailerRole, DistributorRole {
     // Define a function 'processtItem' that allows a farmer to mark an item 'Processed'
     // Call modifier to check if upc has passed previous supply chain stage
     // Call modifier to verify caller of this function
-    function processItem(uint256 _upc) public onlyOwner harvested(_upc) {
+    function processItem(uint256 _upc) public onlyFarmer harvested(_upc) {
         // Update the appropriate fields
         items[_upc].itemState = State.Processed;
         // Emit the appropriate event
@@ -213,7 +213,7 @@ contract SupplyChain is Ownable, ConsumerRole, RetailerRole, DistributorRole {
     // Define a function 'packItem' that allows a farmer to mark an item 'Packed'
     // Call modifier to check if upc has passed previous supply chain stage
     // Call modifier to verify caller of this functio
-    function packItem(uint256 _upc) public onlyOwner processed(_upc) {
+    function packItem(uint256 _upc) public onlyFarmer processed(_upc) {
         // Update the appropriate fields
         items[_upc].itemState = State.Packed;
         // Emit the appropriate event
@@ -225,7 +225,7 @@ contract SupplyChain is Ownable, ConsumerRole, RetailerRole, DistributorRole {
     // Call modifier to verify caller of this function
     function sellItem(uint256 _upc, uint256 _price)
         public
-        onlyOwner
+        onlyFarmer
         packed(_upc)
     {
         // Update the appropriate fields
